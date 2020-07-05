@@ -1,0 +1,17 @@
+---
+title: "Atividade 10/07"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+library(readr)
+
+df_casos <- readr::read_csv2("data-raw/notificacoes-covid19-mg.csv",
+                  locale = locale(encoding = "latin1", decimal_mark = ",", date_format = "%d/%m/%Y"))
+
+
+df_obitos <- read_csv2("data-raw/obitos-confirmados-covid19-mg.csv", 
+                    locale = locale(encoding = "UTF-8", decimal_mark = ","))
+
+```
+
