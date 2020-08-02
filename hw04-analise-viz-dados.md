@@ -1,9 +1,7 @@
----
-title: "Atividade 10/07"
-output: github_document
----
+Atividade 10/07
+================
 
-```{r, warning=FALSE, message=FALSE}
+``` r
 library(tidyverse)
 
 casos <- readr::read_csv2("data-raw/notificacoes-covid19-mg.csv",
@@ -37,3 +35,4 @@ df %>%
   geom_line(aes(x = DATA, y = TAXA_LETALIDADE))
 ```
 
+![](hw04-analise-viz-dados_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
